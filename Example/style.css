@@ -46,17 +46,19 @@ p {
 .font{
     font-family: sans-serif, Lucida Sans, Arial;
     font-size: 16px;
+    letter-spacing: 2px;                            /*khoảng cách giữa các ký tự*/
     font-style: italic;                             /*kiểu phông chữ*/
     font-weight: 400;                               /*độ dày phông chữ*/
-    text-decoration: dotted underline;              /*trang trí văn bản*/
+    text-decoration: dotted underline;              /*trang trí văn bản: none solid rgb(68, 68, 68); || none/underline/overline/line-through*/
+    text-transform: none;                           /*chuyển đổi văn bản: none/ uppercase/ lowercase/ capitalize*/
 }
 
 /*-----------------------Định dạng về viền/lề----------------------- */
 .d{
-    border-style: solid;                          /*kiểu viền*/
+    border-style: solid;                          /*kiểu viền: dotted/dashed/double/groove/ridge*/
     border-width: 2px;                            /*chiều rộng viền*/
     border-color: teal;
-    border-radius: 20px;                          /*bán kính đường viền*/
+    border-radius: 20px;                          /*bán kính đường viền: bo tròn cả 4 góc*/
     padding: 10px;                                /*khoảng cách content với viền*/
     border-top-color: tomato;
     border-right-color:springgreen;
@@ -131,11 +133,12 @@ body{
 }
 
 /*------------------------------Dùng Shadow: Độ bóng------------------------------ */
-#shadow{
-    text-shadow: -5px 5px 5px lightgreen;
-    /*C2: text-shadow: -5px 5px 5px lightgreen, 5px 5px 5px lightpink;*/
-    box-shadow: 10px 10px 5px lightskyblue;   /*Ko gian của cả element*/
+#shadow {
+    text-shadow: -5px 5px 5px lightgreen;     /*C2: text-shadow: -5px 5px 5px lightgreen, 5px 5px 5px lightpink;*/
+    box-shadow: 10px 10px 5px lightskyblue;   /*Ko gian của cả element: -right, +down, +độ mờ, +độ lan tỏa, +độ trong suốt
+                                                                            2px     1px    0px       1px       rgba(0,0,0,0.29*/
 }
+    
 
 /*---------------------------------Dùng Transform--------------------------------- */
 #BO1{
