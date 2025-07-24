@@ -1,0 +1,26 @@
+/*Hình ảnh đổi chiều rộng, chiều dài sao cho phù hợp*/
+.img-circle{
+    width: 100%;
+    height: 258px;
+}
+
+.container{
+    background-color: #333333;                /*Đổi màu toàn bộ*/
+    color: white;
+}
+
+.food{
+    text-align: center;                         /*Kiểu chữ ở giữa*/
+    margin-top: 10px;                           /*Cách bên trên 10px*/
+    margin-bottom: 10px;
+}
+
+.food h1{                                       /*Đổi màu tiêu đề món ăn*/
+    color: gold;
+}
+
+.footer{
+    background-color: gray;                  /*Đổi màu nền*/
+    border-top: 1px solid gold;              /*độ dày viền, , màu viền trên*/
+    padding-top: 20px;
+}
