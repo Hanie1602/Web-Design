@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+}
+
+.header_content {
+    display: flex;                                      /* Use flexbox */
+    justify-content: space-between;                     /* Phân bố đều các hạng mục dọc theo trục chính */
+    align-items: center;                                /* Căn giữa các mục theo chiều dọc */
+}
+
+.header_menu ul {
+    list-style-type: none;                              /* Loại bỏ các dấu đầu dòng */
+    display: flex;                                      /* Use flexbox */
+    justify-content: space-between;                     /* Phân bố đều các hạng mục dọc theo trục chính */
+    align-items: center;                                /* Căn giữa các mục theo chiều dọc */
+}
+
+.header_menu li a {
+    text-decoration: none;                              /* Xóa gạch chân */
+    color: rgb(38, 161, 209);                         /* Đặt màu văn bản thành màu đen */
+    font-weight: bold;                                  /* Làm đậm phông chữ */
+    padding: 10px;                                      /* Thêm phần padding vào các liên kết */
+}
+
+.header_logo img {
+    width: 50%;                                         /* Đặt chiều rộng thành 50% */
+}
+
+.header_search button {
+    background-color: orange;                       /* Đặt màu nền thành màu cam */
+    color: white;                                   /* Đặt màu văn bản thành màu trắng */
+}
+
+
+
+.banner {
+    display: flex;                                    /* Use flexbox */
+}
+
+.banner img {
+    width: 50%;                                      /* Đặt chiều rộng của mỗi hình ảnh thành 50% */
+    object-fit: cover;                               /* Chia tỷ lệ hình ảnh cho phù hợp mà không bị biến dạng */
+}
+
+
+
+.best_seller {
+    display: flex;                                  /* Use flexbox */
+    flex-wrap: wrap;                                /* Allow items to wrap onto new lines */
+    justify-content: center;                        /* Căn giữa các phần tử con theo chiều ngang */
+    align-items: flex-start;                        /* Align child elements at the top of the container */
+}
+
+.best_seller h1 {
+    color: red;                                  /* Đặt màu văn bản thành màu đỏ */
+    text-align: center;                            /* Căn giữa tiêu đề theo chiều ngang */
+    width: 100%;                                   /* Chiếm toàn bộ chiều rộng của container */
+    margin-top: 0;                                 /* Remove default top margin */
+    margin-bottom: 20px;                           /* Add some space below the heading */
+}
+
+.best_seller_img,
+.best_seller_content {
+    width: 50%;                                   /* Chiếm 50% chiều rộng */
+    box-sizing: border-box;                       /* Bao gồm padding và border trong tổng chiều rộng của phần tử */
+    padding: 10px;                                /* Add some padding to the elements */
+}
+
+.best_seller_img img {
+    width: 70%;                                   /* Làm cho hình ảnh chiếm toàn bộ chiều rộng của vùng chứa nó */
+}
+
+.best_seller_content h2 {
+    color: rgb(38, 161, 209);
+}
+
+.best_seller_content span {
+    color: orange;
+}
+
+
+
+.gift {
+    width: 100%;
+    display: flex;                              /* Use flexbox */
+    align-items: center;                        /* Căn giữa các phần tử con theo chiều dọc */
+}
+
+.gift>div {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.gift>div img {
+    width: 50%;
+}
+
+.gift>div h2 {
+    font-size: 16px;
+}
+
+
+
+.sale_off {
+    display: flex;                                      /* Use flexbox */
+    flex-wrap: wrap;                                    /* Allow items to wrap onto new lines */
+    justify-content: center;                            /* Căn giữa các phần tử con theo chiều ngang */
+    align-items: flex-start;                            /* Căn chỉnh các phần tử con ở đầu vùng container */
+}
+
+.sale_off h1 {
+    color: red;                                      /* Đặt màu văn bản thành màu đỏ */
+    text-align: center;                                /* Căn giữa tiêu đề theo chiều ngang */
+    width: 100%;                                       /* Chiếm toàn bộ chiều rộng của container */
+    margin-top: 0;                                     /* Remove default top margin */
+    margin-bottom: 20px;                               /* Add some space below the heading */
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+
+.product img{
+    width: 250px;
+    height: 250px;
+}
+
+.product>div {
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 20px;                            /* Add some spacing below each child element */
+}
+
+.product>div:last-child {
+    margin-right: 0;
+}
+
+.productname {
+    background-color: orange;
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+  }
+  
+
+  
+  .footer {
+    padding-top: 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .footer p,
+  .footer h5 {
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  
