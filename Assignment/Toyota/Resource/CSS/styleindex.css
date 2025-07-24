@@ -1,0 +1,141 @@
+/*Phần 1: gom menu, logo, search thành 1 hàng*/
+.flex-sa{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    padding-left: 35%;                  /*Đẩy lùi trái của logo*/
+}
+
+.logo img{                              /*Thu nhỏ logo lại*/
+    width: 25%;
+}
+
+.img-full-width{                        /*Cho logo, hình ảnh2 mặc định 100%*/
+    max-width: 100%;
+}
+
+/*Phần 2: Cho hình ảnh và bảng điền thành 1 hàng*/
+.flex{
+    display: flex;                      /*Gom thành 1 hàng*/
+}
+
+.banner{
+    width: 50%;                         /*Tăng kích cỡ hình ảnh*/
+}
+
+.banner img{
+    width:100%;
+}
+
+.register{
+    width: 30%;                         /*Cho chữ cân xứng*/
+    margin-left: 50px;                  /*Đẩy lùi bên trái để có khoảng cách với hình ảnh*/
+}
+
+.content{
+    color: orange;                    /*Đổi màu chữ của bảng điền*/
+    font-size: 20px;                    /*Kích cỡ chữ thành 20px*/
+}
+
+.content h1{
+    text-align: center;                 /*Tiêu đề ra giữa*/
+}
+
+.item{
+    padding: 10px 0px;                  /*Khoảng cách giữa các ô với nhau*/
+    display: flex;                      /*Cho chữ và ô điền lên thành 1 hàng*/
+    justify-content: space-between;
+    height: 35px;                       /*Cho khung bự theo chiều dọc*/
+}
+
+.w40{
+    width: 40%;                         /*Cân chỉnh chiều ngang sao cho cân xứng*/
+}
+
+.cmt{
+    height: 145px;                      /*Cho ô comment theo chiều dọc rộng ra*/
+}
+
+.item input{                            /*Căn chỉnh các ô sao cho đều nhau*/
+    width: 100%;
+    margin-right: 10%;
+}
+
+.item select{
+    width: 100%;
+    margin-right: 10%;
+}
+
+.item textarea{
+    width: 100%;
+    margin-right: 10%;
+}
+
+.day{                                   /*Đẩy Your comment xuống dưới cho giống ảnh trường yêu cầu*/
+    margin-top:100px;
+}
+
+.btn{
+    margin-top: 30%;                    /*Đẩy 2 khối Send, Cancel xuống*/
+    margin-left: 40%;                   /*Đẩy 2 khối Send, Cancel sang phải*/
+}
+
+.btn input{
+    color: white;
+    background: orange;
+    border: solid 1px;                  /*Mất viền, độ dày viền 1px*/
+    width: 100px;                       /*Cho ô rộng ra*/
+    height: 50px;
+}
+
+/*Phần 3: Best Seller: Cho hình ảnh và nội dung thành 1 hàng*/
+.title{
+    text-align: center;                 /*Cho tiêu đề ở giữa*/
+    color: red;
+}
+
+.img-r{
+    margin-right: 20px;                 /*Đẩy lùi bên phải để có khoảng cách với nội dung*/
+}
+
+.c{
+    width:116%;                         /*Thay đổi kích thước nội dung*/
+    font-size: 20px;                    /*Kích cỡ chữ 20px*/
+}
+
+.c p{
+    width: 90%;
+    font-weight: 100;
+}
+
+.b{
+    color:rgb(11, 88, 204);         /*Đổi màu chữ tiêu đề*/
+}
+/*Phần 4: Accessories: Cho hình ảnh và nội dung thành 1 hàng*/
+.ass{
+    font-size: 20px;                /*Cho toàn bộ kích cỡ chữ trong class 20px*/
+}
+
+.ass p {
+    width: 72%;                     /*Thu hẹp phạm vị chữ, để ko lấn sang ảnh bên kia*/
+}
+
+.img-a{
+    margin-right: 25px;             /*Đẩy lùi sang bên trái để có khoảng cách với nội dung*/
+}
+
+.price{
+    color: orange;                /*Màu chữ để giá*/
+}
+
+/*Phần cuối*/
+.footer{
+    color: white;
+    background-color: rgb(62, 117, 199);
+    text-align: center;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+}
