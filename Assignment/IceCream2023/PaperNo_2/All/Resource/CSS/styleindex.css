@@ -1,0 +1,149 @@
+.header{
+    display: flex;             /*Nằm cùng 1 hàng*/
+    justify-content: space-around;
+
+}
+
+.logo {
+    margin-top: 15px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: lightgrey;
+    border-width: 3px;
+
+}
+
+.logo img{
+    width: 150px;
+}
+
+.title {
+    color: limegreen;
+    font-size: 47px;
+    font-family: Ephesis;
+    margin-top: 20px;
+}
+
+.title01 {
+    margin-right: -96px;
+}
+
+/*Phần 2: Home, About, Ice Cream Menu,...*/
+.content_menu {
+    background-color: green;
+    height: 42px; 
+}
+
+.content_menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;                           /*Mất dấu o nhỏ*/
+    padding: 12px 222px 0px 222px;              /*top, right, bottom, left*/
+    
+}
+
+.content_menu ul li a {
+    text-decoration: none;                  /*Mất dấu gạch dưới của các chữ*/
+    color: white;
+}
+
+/*Phần 3: 2 hình ảnh nằm trên cùng 1 hàng*/
+.banner {
+    display: flex;
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+.banner1 {
+    width: 50%;
+    height: 570px;
+}
+
+.banner2 {
+    width: 50%;
+    height: 570px;
+}
+
+/*Phần 3: Hình ảnh và nội dung nằm trên cùng 1 hàng*/
+.image_content {
+    display: flex;
+    margin-top: 30px;
+}
+
+.detail_content {
+    margin-left: 35px;
+}
+
+.detail_content h2{
+    color: deeppink;
+}
+
+.detail_content ul {
+    color: darkturquoise;
+    list-style: circle;
+    font-style: italic;
+}
+
+/*Phần 4: Tự tạo thêm bảng, và 2 bảng này nằm trên cùng 1 hàng*/
+.order {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 450px;                    /*Kéo khoảng cách giữa 2 bảng lại*/
+    font-size: 20px;
+}
+
+.order_header{
+    background-color: green;
+    color: white;
+    padding: 0 40px;
+    
+}
+
+.order_header h3 {
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-bottom: 0px;
+}
+
+.menu_list {
+    margin-top: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+.order_body{
+    background-color: lightgray;
+}
+
+.order_body ul {
+    list-style: none;
+    padding: 9px 0px 9px 10px;
+    margin-top: 0;
+}
+
+.order_body ul li span {
+    margin-left: 55px;
+}
+
+/*Tạo nút bấm Order*/
+.btn-order {
+    background-color: rgb(241, 156, 0);
+    border: solid 1px ;
+    border-radius: 10px;
+    width: 123px;
+    height: 34px;
+    color: white;
+    font-size: 15px;
+    margin-left: 650px;
+}
+
+/*Cái cuối cùng*/
+.footer{
+    background-color: green;
+    color:#fff;
+    text-align: center;
+    padding:15px 0;
+    margin-top: 10px;
+}
