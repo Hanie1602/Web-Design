@@ -1,0 +1,131 @@
+/*Phấn 1: Chỉnh logo, tiêu đề, search*/
+.flex-sa {
+    display: flex;                          /*Sắp xếp cả 3 thành 1 hàng*/
+    justify-content: space-around;          /*Khoảng cách giữa 3 cái*/
+}
+
+.img-full-width{
+    max-width: 100%;                        /*Màn hình mặc định 100%*/
+    width: 50%;                             /*Thu nhỏ logo*/
+}
+
+.logo-div {
+    margin-left: -100px;                     /*Đẩy logo đi vào bên trái*/
+}
+
+.navbar {
+    list-style: none;                       /*Bỏ dấu chấm tròn*/
+}
+
+.navbar li a{
+    text-decoration: none;                  /*Bỏ dấu gạch chân toàn bộ tiêu đề*/
+    color: rgb(29, 207, 207);
+    font-size: 20px;
+} 
+
+.flex {
+    display: flex;                          /*Sắp xếp các chữ Home, About,... thành 1 hàng*/
+}
+
+.navbar li {
+    padding: 0 25px;                        /*Khoảng cách giữa Home, About, Tour,...*/
+    margin-top: 15px;
+}
+
+.form-search {
+    margin-top: 35px;
+    margin-right: -150px;
+}
+
+.search-change {                           /*Thay đổi màu nút search*/
+    background-color: black;
+    color: white;
+}
+
+/*Cho 2 ảnh thành 1 hàng*/
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.img-45 {
+    max-width: 45%;                         /*Căn chỉnh cho mỗi ảnh rộng dài 45*/
+}
+
+/*Chỉnh sửa chữ và nội dụng*/
+.content-detail h1{
+    color: deepskyblue;
+    text-align: center;                     /*Cho các dòng chữ căn giữa*/
+}
+
+.content-detail p{
+    font-size: 20px;
+    color: orange;
+    font-style: italic;
+}
+
+/*Tự code bên js*/
+.menu-top{                                  /*Đổi màu cho tiêu đề*/
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu-body ul{                              /*Đổi màu cho phần menu*/
+    background-color: lightgray;
+    color: black;
+    margin-top: 0;
+    padding: 20px;
+    list-style: none;                       /*Xóa nút tròn*/
+}
+
+.btn-tour{                                  /*Đổi màu nút bấm*/
+    color: white;
+    background-color: orange;
+    margin: 20px 140px;
+    padding: 10px 25px;                      /*Trên dưới, trái phải*/
+    border: solid;                          /*Chỉnh viền không có*/
+    border-radius: 10px;                     /*Viền được bo tròn*/
+}
+
+.total-div {
+    background-color: green;
+    color: white;
+}
+
+.tour{                                      /*Căn chỉnh khung cho bằng nhau*/
+    margin-left: 86px;
+}
+
+.tour1{
+    margin-left: 51px;
+}
+
+.tour2{
+    margin-left: 59px;
+}
+
+.tour3{
+    margin-left: 52px;
+}
+
+.tour4{
+    margin-left: 76px;
+}
+
+.displays{
+    color: orange;
+    margin-left: 50px;
+}
+
+/*Chỉnh sửa lời kết cuối*/
+.footer {
+    background-color: darkcyan;
+    color: white;
+    padding-top: 10px 0;
+}
+
+.copy{
+    text-align: center;
+}
