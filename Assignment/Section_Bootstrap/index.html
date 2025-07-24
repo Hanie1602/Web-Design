@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style01.css">
+
+    <style>
+        #classes{
+            margin-right: 0;
+            margin-left: 0;
+            padding-top: 0;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <h3>Example 1: Container</h3>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, magni rem? Ipsum doloremque cum dicta rerum. Non natus delectus cum ut, corrupti laudantium ad fuga quaerat repudiandae maxime alias impedit!
+    </div>
+    <hr>
+
+    <!-- -----------------------------------Độ rộng column---------------------------- -->
+    <h3>Example 2: Độ rộng của cột (column)</h3>
+    <h6>Three Equal Columns</h6>
+    <div class="container">
+        <div class="row">                       <!-- 1 row là 1 hàng-->
+            <div class="col-md- col-1">         <!--Độ rộng màn hình từ Medium trở lên >= 3, nhỏ hơn = 1-->
+                <div class="box">1</div>
+            </div>
+            <div class="col-3">                 <!--Độ rộng của cột là: 3 ("col-3") || Hoặc là: Độ rộng màn hình lg chiếm 3 cột: col-lg-3-->
+                <div class="box">2</div>     
+            </div>
+            <div class="col-1">                 <!--Độ rộng của cột là: 1-->
+                <div class="box">3</div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <h6>Grid System</h6>
+    <div class="container-fluid bg-primary row" id="classes">    
+        <div class="container bg-info col-md-4">Hàng 1</div>       
+        <div class="container bg-success col-md-8">Hàng 2</div>
+    </div>
+    <hr>
+
+    <!-- ----------------------------------Số lượng column-------------------------- -->
+    <h3>Example 3: Số lượng cột</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="row row-cols-4">            <!--Chứa 4 cột trong 1 hàng-->
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- ---------------------------------------Row----------------------------------- -->
+    <h3>Example 4: Khoảng cách chiều ngang/chiều dọc giữa các cột </h3>
+    <div class="container">
+        <div class="row row-cols-4 gx-3">        <!--Mỗi 1 hàng chỉ có 4 cột (tổng số cột 1 hàng là 8). gx/gy: khoảng cách chiều ngang/dọc giữa các cột-->
+
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- -----------------------------------Màu sắc---------------------------------- -->
+    <h3>Example 5: Màu sắc (Chỉ cần thêm các class name)</h3>
+    <p style="text-align: center;"><b>Có 10 màu sắc được định nghĩa sẵn trong bootstrap</b></p>
+    <p class="text-primary">Primary</p>                 <!--Xanh nước biển-->
+    <p class="text-secondary">Secondary</p>             <!--Xám-->
+    <p class="text-success">Success</p>                 <!--Xanh lá cây-->
+    <p class="text-danger">Danger</p>                   <!--Đỏ/hồng-->
+    <p class="text-warning">Warning</p>                 <!--Cam nhạt-->
+    <p class="text-info">Info</p>                       <!--Xanh nước biển nhạt-->
+    <p class="text-light bg-black">Light</p>            <!--Màu chữ: sáng, màu nền chữ: đen-->
+    <p class="text-black ">Dark</p>                     <!--Đen-->
+    <p class="text-white bg-secondary">White</p>        <!--Màu chữ: trắng, màu nền chữ: xám-->
+    <p class="text-muted">Muted</p>                     <!--Đen nhạt-->
+
+    <div class="container bg-success">
+        <h4>Được căn giữa 2 bên, màu nền xanh lá cây</h4>
+    </div>
+    <div class="container-fluid bg-info-subtle">
+        <h4>Chiều dài chiếm hết 2 bên, màu nền xanh nước biển nhạt</h4>
+    </div>
+    <hr>
+
+    <!-- ------------------------------------Bảng------------------------------------ -->
+    <h3>Example 6: Tạo bảng khi có bootstrap(Chỉ cần thêm các class name)</h3>
+    <table class="table table-striped table-info">               
+        <tr class="table-danger">
+            <th>STT</th>
+            <th>Tên</th>
+            <th>Tuổi</th>
+            <th>Khóa học</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nguyễn Văn A</td>
+            <td>20</td>
+            <td>Lập trình Web</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Nguyễn Văn B</td>
+            <td>18</td>
+            <td>Lập trình Web</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Nguyễn Văn C</td>
+            <td>21</td>
+            <td>Lập trình Web</td>
+        </tr>
+    </table>
+    <!--Thêm class table, gồm có:
+        >> table
+        >> table table-striped
+        >> table table-striped-columns
+        >> table table-hover: khi cho con trỏ chuột vào 1 hàng bất kì, hàng đó sẽ được highlight
+        >> table table-hover table-primary: hàng được trỏ sẽ được highlight thành màu xanh-->]
+        <hr></hr>
+    
+    <!-- ------------------------------------Form------------------------------------ -->
+        <h3>Example 7: Form (Chỉ cần thêm các class name)</h3>
+        <div class="container">
+            <form>
+                <div>
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" type="email" id="email">       
+                </div>
+                <div>
+                    <label class="form-label" for="password">Password</label>
+                    <input class="form-control" type="password" id="password">
+                </div>
+                <div>       <!--Người dùng ko thể nhập bất kì thông tin nào, do có readonly-->
+                    <label class="form-label" for="email01">Email01</label>
+                    <input readonly class="form-control" type="email" id="email01">      
+                </div>
+                <div>       <!--Thêm class="form-select"-->
+                    <label for="select">Select</label>
+                    <select class="form-select" id="select">                             
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div>       <!--Nút bấm hình vuông-->
+                    <input class="form-check-input" type="checkbox" id="password">
+                    <label class="form-label" for="password">Đồng ý</label>
+                </div>
+                <div class="form-check form-switch">       <!--Thêm class để đổi sang nút bấm khác--> <!--Để nó có cùng chung 1 dòng: thêm form-check-inline-->
+                    <input class="form-check-input" type="checkbox" id="password">
+                    <label class="form-label" for="password">Không đồng ý</label>
+                </div>
+            </form>
+        </div>
+        <hr>
+
+    <!-- ------------------------------------Button------------------------------------ -->
+        <h3>Example 8: Button (Chỉ cần thêm các class name)</h3>
+        <div class="container">
+            <button class="btn btn-primary">Click me</button>               <!--toàn bộ nền xanh-->
+            <button class="btn btn-outline-primary">Click me</button>       <!--viền xanh, nền trắng-->
+            <a class="btn btn-success">Google</a>
+            <button class="btn btn-link">Google2</button>
+        </div>
+        <hr>
+    
+    <!-- -------------------------------------Alert------------------------------------- -->
+        <h3>Example 9: Alert (giống như kiểu tắt các quảng cáo)</h3>
+        <p>Khi đăng nhập thành công, sẽ thông báo thành công. <br>Khi đăng nhập thất bại, sẽ thông báo thất bại</p>
+        <div class="container">
+            <div class="alert alert-success m-2 alert-dismissible" role="alert">       <!--gọi alert, màu alert, căn chỉnh lề, có thể tắt đi được-->
+                Bạn đã đăng nhập thành công
+                <button class="btn-close" aria-label="close"
+                data-bs-dismiss="alert"></button>
+                <!--btn-close: tạo ra có dấu X để tắt
+                    data-bs-dimiss (javascript)-->
+            </div>
+        </div>
+        <hr>
+
+    <!-- -------------------------------------Card------------------------------------- -->
+        <h3>Example 10: Card (Có Image)</h3>
+        <div class="container">
+            <div class="card-group">                            <!--Nhóm 2 cái lại lên thành 1 hàng-->
+                <div class="card" style="width: 300px;">
+                    <h3 class="card-header">I'm card-header</h3>
+                    <img src="../Images/Rái cá 0.jpg" class="card-img-top">         <!--Thêm ảnh vào-->
+                    <div class="card-body ">
+                        <div class="card-title">                <!--Card-title-->
+                            <h5>Card title</h5>
+                        </div>
+                        <div class="card-subtitle">             <!--Card-subtitle-->
+                            Lorem ipsum dolor, 
+                        </div>
+                        <div class="card-text">                 <!--Card-text-->
+                            sit amet consectetur adipisicing elit. Dolore corporis doloremque recusandae hic nesciunt distinctio, exercitationem, architecto magnam consectetur eos earum sint necessitatibus aspernatur, magni similique a perferendis eveniet beatae?
+                        </div>
+                    </div>
+                    <h3 class="card-footer">I'm card-footer</h3>
+                </div>
+
+                <!--Dưới là ví dụ, coppy y trang ở trên, không cần quan tâm-->
+                <div class="card" style="width: 300px;">
+                    <h3 class="card-header">I'm card-header</h3>
+                    <img src="../Images/Rái cá 0.jpg" class="card-img-top">         <!--Thêm ảnh vào-->
+                    <div class="card-body ">
+                        <div class="card-title">                <!--Card-title-->
+                            <h5>Card title</h5>
+                        </div>
+                        <div class="card-subtitle">             <!--Card-subtitle-->
+                            Lorem ipsum dolor, 
+                        </div>
+                        <div class="card-text">                 <!--Card-text-->
+                            sit amet consectetur adipisicing elit. Dolore corporis doloremque recusandae hic nesciunt distinctio, exercitationem, architecto magnam consectetur eos earum sint necessitatibus aspernatur, magni similique a perferendis eveniet beatae?
+                        </div>
+                    </div>
+                    <h3 class="card-footer">I'm card-footer</h3>
+                </div>
+            </div>
+            
+            <!--Muốn chữ ở trên tấm ảnh luôn thì thay đổi 1 xíu
+                >> class="card-img"
+                >> class="card-body card-img-overlay"-->
+        </div>
+        <hr>
+
+    <!-- -------------------------------------Modal------------------------------------- -->
+    <h3>Example 11: Modal</h3>
+    <p style="text-align: center;">Cần 1 button để mở Modal lên</p>
+    <div class="container">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+            Open
+        </button>
+        <div class="modal" id="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">My Modal</div>
+                    <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea sunt cum repudiandae error necessitatibus ut aperiam blanditiis deleniti voluptatibus cupiditate, vero consequuntur itaque at dolore eius. Explicabo, doloribus ea.</div>
+                    <div class="modal-footer">Footer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+        >> data-bs-toggle="modal": Tác động lên những cái modal
+        >> data-bs-target="#modal": Chỉ tới id thì là dấu # [Do có thể có rất nhiều modal nên cần chỉ rõ ra]
+    -->
+    <hr>
+
+<!-- -------------------------------------Navbar------------------------------------- -->
+    <h3>Example 12: Navbar</h3>
+    <p> Navbar: dùng để chứa logo, các đường link, các đăng nhập [hầu hết các trang Web đều được phát triển đều phải có Navbar</p>
+    <div class="navbar navbar-expand-md bg-success text-white">         <!--gọi narbar, cho nó thành 1 hàng [md: điều kiện >= màn hình medium], màu nền, màu chữ-->
+        <a href="" class="navbar-brand text-white">Logo</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>                   
+        </button>
+        <div class="collapse navbar-collapse" id="nav">                          <!--collapse navbar-collapse: khi màn hình từ >=medium sẽ hiển thị đầy đủ, nhỏ hơn thì ko thấy-->
+            <div   div class="navbar-nax">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="">Home</a>     <!--active: khi bấm vào, nó sẽ được đồ đậm lên-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Checkout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        
+    </div>
+</body>
+</html>
+
+<!-- Container > Row > Column-->
+<!-- xs: <576px (Extra small)
+     sm: >=576px (Small)
+     md: >=768px (Medium)
+     lg: >=992px (Large)
+     xl: >= 1200 (Extra large)-->
+
+<!-- Bootstrap: Là 1 Framework CSS mã nguồn mở và miễn phí, giúp chúng ta tạo ra các trang Web có thể Responsive 1 cách nhanh chóng hơn
+     Bootstrap: chứa các CSS, JavaScript cho các hình ảnh, nút bấm, form,... 
+
+     Framework: là các đoạn code đã được viết sẵn, cấu thành nên 1 bộ khung và các thư viện lập trình được đóng gói
+     Responsive: là tạo ra trải nghiệm Website trên tất cả các thiết bị mà không cần lo ngại gặp trục trặc về hiển thị, giao diện. -->
+
+<!-- Image:
+    Hình vuông góc tròn: <img src="cinqueterre.jpg" class="rounded" alt="Cinque Terre">            || .rounded
+    Hình tròn: <img src="cinqueterre.jpg" class="rounded-circle" alt="Cinque Terre">               || .rounded-circle
+    Hình vuông viền trắng: <img src="cinqueterre.jpg" class="img-thumbnail" alt="Cinque Terre">    || .img-thumbnail
+-->
+     
