@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style02.css">
+    <script src="scrip01.js" defer></script>
+</head>
+<body>
+    <!--Cách viết khác: <script src="filename.js"></script> -->
+    <h3>Example 1: </h3>
+    <h4 class="heading" id="h1">Heading1</h4>
+    <h4 class="heading" id="h2">Heading2</h4>
+    <h4 class="heading" id="h3">Heading3</h4>
+    <hr>
+
+    <!-- -----------------------------Xóa element (delete)----------------------------- -->
+    <h3>Example 2: Delete</h3>
+    <h4>Hello everybody</h4>
+    <p class="paragraph" id="p1">Tôi là Thùy Dương</p>
+    <p class="paragraph" id="p2">Tôi đang học lập trình Web</p>
+    <p class="paragraph" id="p3">Ví dụ về cách xóa 1 element</p>
+
+    <!-- ------------------------Thay đổi element (Change)------------------------- -->
+    <h3>Example 3: Change: thêm, sửa, xóa</h3>
+    <h4>Hello everybody</h4>
+    <p class="paragraph" id="p01">Tôi là Thùy Dương</p>
+    <p class="paragraph" id="p02" onclick="">Tôi đang học lập trình Web</p>
+    <p class="paragraph" id="p03">Ví dụ về cách xóa 1 element</p>
+
+    <!-- ------------------------Event------------------------- -->
+    <h3>Example 4: Event</h3>
+    <div class="container">
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input onchange="inputHandler" class="form-control" id="inputEmail4">        <!--**-->
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
+    </div>
+
+    <!-- ----------------Thêm element(Add) và Tạo element (Creative)---------------- -->
+    <hr>
+    <h3>Example 4: Add and Creative</h3>
+</body>
+</html>
